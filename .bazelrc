@@ -1,0 +1,9 @@
+build --incompatible_strict_action_env
+test --incompatible_strict_action_env
+run --incompatible_strict_action_env
+
+build --incompatible_enable_cc_toolchain_resolution
+
+# These flags don't seem to change anything
+# build --features static_libstdcxx
+# build --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
